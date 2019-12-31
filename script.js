@@ -11,6 +11,7 @@ request.onload = function() {
   data.forEach(movie => {
     // Log each movie's title.
     console.log(movie.title)
+  })
 }
 
 // Send request.
