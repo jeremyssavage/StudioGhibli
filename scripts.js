@@ -13,8 +13,6 @@ fetch('https://ghibliapi.herokuapp.com/films')
     return response.json();
   })
   .then(data => {
-    app = document.findElementById('root');
-  
     data.forEach(movie => {
       const card = document.createElement('div');
       card.setAttribute('class', 'card');
