@@ -28,6 +28,7 @@ fetch('https://ghibliapi.herokuapp.com/films')
       movie.description = movie.description.substring(0, 300);
       p.textContent = `${movie.description}...`;
       card.append(p);
+    })
   })
   .catch(err => {
     console.log(err);
